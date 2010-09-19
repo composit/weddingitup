@@ -1,0 +1,14 @@
+<%= image_tag "#{@active_page[:name]}.jpg", :id => "selves" %>
+<% if( @active_page[:photo_source] ) %>
+  <div id="photo-source">photo source: <%= link_to @active_page[:photo_source], @active_page[:photo_source], :target => "_blank" %></div>
+<% end %>
+<div id="content">
+  <ul id="nav">
+    <% PAGES.each_with_index do |page, index| %>
+      <li id="<%= page[:name] %>"<%= " class='active'" if( PAGES[index] == @active_page ) %>><%= link_to page[:name].gsub( "_", " " ), "/#{page[:name]}" %></li>
+    <% end %>
+  </ul>
+  <div id="infos">
+    <%= render( :partial => @active_page[:name] ) %>
+  </div>
+</div>

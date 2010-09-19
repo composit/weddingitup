@@ -1,0 +1,134 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  min-width: 1000px;
+  background-color: #7d9e3c;
+}
+
+img#selves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  border: 10px solid #73581d;
+  margin: 20px;
+  padding: 20px;
+}
+
+div#content {
+  margin-left: 500px;
+  width: 500px;
+  position: relative;
+  }
+
+  ul#nav {
+    margin: 20px 20px 0 20px;
+    width: 100%;
+    overflow: hidden;
+    }
+
+    ul#nav li {
+      float: left;
+      padding: 5px;
+      background-color: #40270a;
+      margin: 0 2px;
+      -moz-border-radius: 10px 10px 0 0;
+      border-radius: 10px 10px 0 0;
+      }
+
+      ul#nav li a {
+        text-decoration: none;
+        color: #c8ba50;
+        font-weight: bold;
+        font-size: .9em;
+      }
+
+    ul#nav li.active {
+      background-color: #73581d;
+      }
+      
+      ul#nav li.active a {
+        color: #fbed80;
+      }
+
+  div#infos {
+    font-family: Helvetica, sans-serif;
+    border: 10px solid #73581d;
+    width: 100%;
+    background-color: #fbed80;
+    color: #40270a;
+    }
+
+    div#infos p {
+      margin: 20px;
+    }
+
+    div#infos h1 {
+      margin: 20px;
+    }
+
+    div#infos ul {
+      margin: 20px;
+      }
+
+      div#infos ul li {
+        list-style-type: disc;
+        margin-left: 15px;
+      }
+
+div#photo-source {
+  font-size: .8em;
+  font-family: Helvetica, sans-serif;
+  position: absolute;
+  top: 380px;
+  left: 270px;
+}
