@@ -58,15 +58,15 @@ img#selves {
   position: absolute;
   top: 0;
   left: 0;
-  width: 400px;
+  width: 300px;
   border: 10px solid #73581d;
   margin: 20px;
   padding: 20px;
 }
 
 div#content {
-  margin-left: 500px;
-  width: 500px;
+  margin-left: 400px;
+  width: 600px;
   position: relative;
   }
 
@@ -129,6 +129,6 @@ div#photo-source {
   font-size: .8em;
   font-family: Helvetica, sans-serif;
   position: absolute;
-  top: 380px;
-  left: 270px;
+  top: 310px;
+  left: 170px;
 }

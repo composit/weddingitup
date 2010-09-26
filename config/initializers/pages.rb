@@ -17,5 +17,8 @@ PAGES = [
   {
     :name => "registry",
     :photo_source => "http://flic.kr/p/85h4Da"
+  },
+  {
+    :name => "updates"
   }
 ]
