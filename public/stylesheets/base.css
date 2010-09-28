@@ -125,6 +125,10 @@ div#content {
         margin-left: 15px;
       }
 
+    div#infos div#disqus_thread {
+      margin: 20px;
+    }
+
 div#photo-source {
   font-size: .8em;
   font-family: Helvetica, sans-serif;
