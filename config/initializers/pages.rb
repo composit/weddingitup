@@ -16,7 +16,7 @@ PAGES = [
   },
   {
     :name => "registry",
-    :photo_source => "http://flic.kr/p/85h4Da"
+    :photo_source => "http://tssphoto.com"
   },
   {
     :name => "updates"
