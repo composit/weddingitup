@@ -1,15 +1,17 @@
 class ResponsesController < ApplicationController
+  before_filter :set_active_page
+
   def new
-    @response = Response.new
+    @response = Response.new( :number => 0 )
   end
 
   def create
     @response = Response.new( params[:response] )
     if( @response.save )
       flash[:notice] = "Thanks much for RSVPing!"
-      redirect_to rsvp_url
+      redirect_to "/rsvp"
     else
-      render :controller => "welcome", :action => "index", :selected_page => "rsvp"
+      render :new
     end
   end
 end

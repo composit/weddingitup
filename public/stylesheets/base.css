@@ -140,3 +140,31 @@ div#photo-source {
 #errorExplanation {
   color: red;
 }
+
+.clear {
+  overflow: hidden;
+  width: 100%;
+}
+
+.row {
+  width: 100%;
+  }
+
+  .row .label {
+    float: left;
+    width: 30%;
+    text-align: right;
+    margin: 10px;
+    line-height: .8em;
+  }
+
+  .row .field {
+    float: left;
+    width: *;
+  }
+
+#notice {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #0f0;
+}

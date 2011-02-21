@@ -16,19 +16,32 @@
       </ul>
     </div>
   <% end %>
-  <p>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :attending %>
-    <%= f.select :attending, [["Yes","1"],["No","0"]] %>
-  </p>
-  <p>
-    <%= f.label :number, "Number attending" %>
-    <%= f.number_field :number, :size => 3 %>
-  </p>
-  <p><%= f.submit "RSVP" %></p>
+  <%= hidden_field_tag :selected_page, "rsvp" %>
+  <div class="row clear">
+    <div class="label"><%= f.label :name %></div>
+    <div class="field"><%= f.text_field :name %></div>
+  </div>
+  <div class="row clear">
+    <div class="label"><%= f.label :attending %></div>
+    <div class="field"><%= f.select :attending, [["Yes","1"],["No","0"]] %></div>
+  </div>
+  <div class="row clear">
+    <div class="label"><%= f.label :number, "Number attending" %></div>
+    <div class="field"><%= f.number_field :number, :size => 3 %></div>
+  </div>
+  <div class="row clear">
+    <div class="label"><%= f.label :comment %></div>
+    <div class="field"><%= f.text_area :comment, :rows => 5 %></div>
+  </div>
+  <div class="row clear">
+    <div class="label"> </div>
+    <div class="field"><%= f.submit "RSVP" %></div>
+  </div>
+  <% if( flash[:notice] ) %>
+    <div class="row clear">
+      <div class="label"> </div>
+      <div class="field" id="notice"><%= flash[:notice] %></div>
+  <% end %>
 <% end %>
 
 <p>
