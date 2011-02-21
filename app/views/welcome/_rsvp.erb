@@ -3,6 +3,35 @@
 </p>
 
 <p>
+  Responses to the RSVP fields below will not appear on this page.  If you want to leave a public note, enter it in the field at the bottom of the page.  Thanks!
+</p>
+
+<%= form_for( @response ) do |f| %>
+  <% if @response.errors.any? %>
+    <div id="errorExplanation">
+      <ul>
+        <% @response.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :attending %>
+    <%= f.select :attending, [["Yes","1"],["No","0"]] %>
+  </p>
+  <p>
+    <%= f.label :number, "Number attending" %>
+    <%= f.number_field :number, :size => 3 %>
+  </p>
+  <p><%= f.submit "RSVP" %></p>
+<% end %>
+
+<p>
   Paige Sorensen<br />
   (970)416-6328<br />
   paige@weddingitup.com
@@ -15,7 +44,7 @@
 </p>
 
 <p>
-  Or feel free to leave a comment or your RSVP below.
+  Feel free to leave a comment below.
 </p>
 
 <div id="disqus_thread"></div>

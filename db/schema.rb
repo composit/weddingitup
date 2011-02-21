@@ -10,6 +10,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20110221151438) do
+
+  create_table "responses", :force => true do |t|
+    t.string   "name"
+    t.integer  "number"
+    t.boolean  "attending"
+    t.text     "comment"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

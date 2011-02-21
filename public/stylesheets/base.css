@@ -136,3 +136,7 @@ div#photo-source {
   top: 310px;
   left: 170px;
 }
+
+#errorExplanation {
+  color: red;
+}

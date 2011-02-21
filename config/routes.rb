@@ -1,5 +1,7 @@
 Weddingitup::Application.routes.draw do
   resource :welcome, :only => :index
+  resource :responses, :only => [:new, :create]
+  match "/rsvp" => "responses#new"
   root :to => "welcome#index"
   match "/:selected_page" => "welcome#index" 
 
